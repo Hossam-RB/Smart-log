@@ -50,7 +50,7 @@ function login() {
         loginMsg.innerHTML = "All inputs is rewerd"
     } else {
         for (var i = 0; i < userArr.length; i++) {
-            if (uPasswordLog.value == userArr[i].uPasswordO) {
+            if ( eMailLog.value == userArr[i].eMailO && uPasswordLog.value == userArr[i].uPasswordO) {
                 localStorage.setItem('sessionUsername', userArr[i].uNameO)
                 location.replace("./Home.html")
             } else {
